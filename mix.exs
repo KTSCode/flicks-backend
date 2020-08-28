@@ -60,7 +60,7 @@ defmodule Flicks.MixProject do
       {:phoenix, "~> 1.5.4"},
       {:phoenix_ecto, "~> 4.1.0"},
       {:ecto_sql, "~> 3.4.5"},
-      {:postgrex, "~> 1.0.0-rc.1"},
+      {:postgrex, "~> 0.15.5"},
       {:phoenix_live_dashboard, "~> 0.2.7"},
       {:telemetry_metrics, "~> 0.5.0"},
       {:telemetry_poller, "~> 0.5.1"},
