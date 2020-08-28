@@ -28,4 +28,9 @@ flicks-*.tar
 # this depending on your deployment strategy.
 /priv/static/
 
+# elixir language server
 .elixir_ls/
+
+# dialyzer plt
+flicks.plt
+flicks.plt.hash
