@@ -5,8 +5,10 @@ defmodule FlicksWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", FlicksWeb do
+  scope "/" do
     pipe_through :api
+    forward "/graphql", Absinthe.Plug, schema: FlicksWeb.Schema
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: FlicksWeb.Schema, interface: :playground
   end
 
   # Enables LiveDashboard only for development
