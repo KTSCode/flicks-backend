@@ -34,3 +34,5 @@ flicks-*.tar
 # dialyzer plt
 flicks.plt
 flicks.plt.hash
+
+.*.local

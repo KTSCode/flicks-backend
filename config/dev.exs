@@ -1,17 +1,18 @@
 use Mix.Config
 
 # Configure your database
+# config :flicks, Flicks.Repo,
+#  username: "postgres",
+#  password: "postgres",
+#  database: "flicks_dev",
+#  hostname: "localhost",
+#  show_sensitive_data_on_connection_error: true,
+#  pool_size: 10
+
 config :flicks, Flicks.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "flicks_dev",
-  hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
-# For development, we disable any cache and enable
-# debugging and code reloading.
-#
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
@@ -69,8 +70,7 @@ config :git_hooks,
       tasks: [
         "mix clean",
         "mix compile --warnings-as-errors",
-        "mix credo --strict",
-        "mix dialyzer --halt-exit-status"
+        "mix credo --strict"
       ]
     ]
   ]

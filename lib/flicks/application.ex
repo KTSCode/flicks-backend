@@ -4,11 +4,16 @@ defmodule Flicks.Application do
   @moduledoc false
 
   use Application
+  alias Vapor.Provider.{Dotenv, Env}
 
   def start(_type, _args) do
+    # Vapor Setup
+    providers = [%Dotenv{}, %Env{bindings: [db_url: "DB_URL", db_name: "DB_NAME"]}]
+    config = Vapor.load!(providers)
+
     children = [
       # Start the Ecto repository
-      Flicks.Repo,
+      {Flicks.Repo, [url: config.db_url]},
       # Start the Telemetry supervisor
       FlicksWeb.Telemetry,
       # Start the PubSub system

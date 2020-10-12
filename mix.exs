@@ -10,11 +10,6 @@ defmodule Flicks.MixProject do
         "coveralls.post": :test,
         "coveralls.html": :test
       ],
-      dialyzer: [
-        ignore_warnings: ".dialyzer_ignore.exs",
-        list_unused_filters: true,
-        plt_file: {:no_warn, "flicks.plt"}
-      ],
       app: :flicks,
       version: "0.1.0",
       elixir: "~> 1.7",
@@ -55,7 +50,6 @@ defmodule Flicks.MixProject do
       {:excoveralls, "~> 0.13.1", only: :test},
       {:credo, "~> 1.4.0", only: :dev, runtime: false},
       {:mix_test_watch, "~> 1.0.2", only: :dev, runtime: false},
-      {:dialyxir, "~> 1.0.0", only: :dev, runtime: false},
       {:ex_doc, "~> 0.22.2", only: :dev, runtime: false},
       {:phoenix, "~> 1.5.4"},
       {:phoenix_ecto, "~> 4.1.0"},
