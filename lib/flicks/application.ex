@@ -8,7 +8,7 @@ defmodule Flicks.Application do
 
   def start(_type, _args) do
     # Vapor Setup
-    providers = [%Dotenv{}, %Env{bindings: [db_url: "DB_URL", db_name: "DB_NAME"]}]
+    providers = [%Dotenv{}, %Env{bindings: [db_url: "DATABASE_URL"]}]
     config = Vapor.load!(providers)
 
     children = [
