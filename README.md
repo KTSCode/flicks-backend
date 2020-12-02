@@ -10,6 +10,8 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 # TODO
+  - [ ] Setup Raspberry Pi Dev Server
+  - [ ] Setup Postgres
   - [ ] Add OAuth Dependency
   - [ ] Setup OAuth
   - [ ] Add Users Struct
