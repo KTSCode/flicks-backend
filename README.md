@@ -1,9 +1,7 @@
-# flicks-backend
-=======
 # Flicks
 Backend for flicks website
 
-## Getting Started 
+## Getting Started
 To start your Phoenix server:
 
   * Setup the project with `mix setup`
@@ -11,12 +9,11 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+# TODO
+  - [ ] Add OAuth Dependency
+  - [ ] Setup OAuth
+  - [ ] Add Users Struct
+  - [ ] CreateUser Mutation
+  - [ ] SignIn Mutation
+  - [ ] Add Media Struct
+  - [ ] Add Lists Struct
