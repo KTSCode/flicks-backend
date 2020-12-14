@@ -12,6 +12,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 # TODO
   - [ ] Setup Raspberry Pi Dev Server
   - [ ] Setup Postgres
+  - [ ] Add [Mox](https://hexdocs.pm/mox/Mox.html)
+  - [ ] Create docker image and deploy to CloudRun
   - [ ] Add OAuth Dependency
   - [ ] Setup OAuth
   - [ ] Add Users Struct
