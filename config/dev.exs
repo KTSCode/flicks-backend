@@ -1,13 +1,14 @@
 use Mix.Config
 
+# This is overridden with vapor in the application file but it needs to be here for the ecto.setup task to work
 # Configure your database
-# config :flicks, Flicks.Repo,
-#  username: "postgres",
-#  password: "postgres",
-#  database: "flicks_dev",
-#  hostname: "localhost",
-#  show_sensitive_data_on_connection_error: true,
-#  pool_size: 10
+config :flicks, Flicks.Repo,
+  username: "postgres",
+  password: "postgres",
+  database: "flicks_dev",
+  hostname: "localhost",
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
 
 config :flicks, Flicks.Repo,
   show_sensitive_data_on_connection_error: true,

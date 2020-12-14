@@ -8,7 +8,16 @@ defmodule Flicks.Application do
 
   def start(_type, _args) do
     # Vapor Setup
-    providers = [%Dotenv{}, %Env{bindings: [db_url: "DB_URL", db_name: "DB_NAME"]}]
+    providers = [
+      %Dotenv{},
+      %Env{
+        bindings: [
+          {:db_url, "DB_URL", default: "postgresql://postgres:posgres@localhost:5432/flicks_dev"},
+          {:db_name, "DB_NAME", default: "flicks_dev"}
+        ]
+      }
+    ]
+
     config = Vapor.load!(providers)
 
     children = [
