@@ -4,10 +4,11 @@ Backend for flicks website
 ## Getting Started
 To start your Phoenix server:
 
+  * Make sure you have [postgres 13](https://postgresapp.com/downloads.html) installed
   * Setup the project with `mix setup`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000`](http://localhost:4000/graphiql) from your browser to explore the GraphQL schema and make queries using GraphQL Playground.
 
 # TODO
   - [x] Setup Postgres
