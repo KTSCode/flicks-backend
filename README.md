@@ -15,6 +15,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000/graphiql) from your b
   - [x] Add [Mox](https://hexdocs.pm/mox/Mox.html)
   - [ ] Create docker image and deploy to CloudRun
   - [ ] Add OAuth Dependency
+    - [How to integrate google OAuth with an API backend Video](https://www.youtube.com/watch?v=j_31hJtWjlw&feature=youtu.be)
+    - [Docs for above video](https://developers.google.com/identity/sign-in/web/server-side-flow)
   - [ ] Setup OAuth
   - [ ] Add Users Struct
   - [ ] CreateUser Mutation
