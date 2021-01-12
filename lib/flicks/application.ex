@@ -12,8 +12,8 @@ defmodule Flicks.Application do
       %Dotenv{},
       %Env{
         bindings: [
-          {:db_url, "DB_URL", default: "postgresql://postgres:posgres@localhost:5432/flicks_dev"},
-          {:db_name, "DB_NAME", default: "flicks_dev"}
+          {:db_url, "DATABASE_URL",
+           default: "postgresql://postgres:posgres@localhost:5432/flicks_dev"}
         ]
       }
     ]

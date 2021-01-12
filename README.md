@@ -10,8 +10,7 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 # TODO
-  - [ ] Setup Raspberry Pi Dev Server
-  - [ ] Setup Postgres
+  - [x] Setup Postgres
   - [ ] Add [Mox](https://hexdocs.pm/mox/Mox.html)
   - [ ] Create docker image and deploy to CloudRun
   - [ ] Add OAuth Dependency
