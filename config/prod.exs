@@ -13,6 +13,8 @@ config :flicks, FlicksWeb.Endpoint,
   url: [host: "example.com", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
+config :flicks, Flicks.Repo, pool_size: 2
+
 # Do not print debug messages in production
 config :logger, level: :info
 
