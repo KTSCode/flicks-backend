@@ -1,4 +1,7 @@
 defmodule Flicks.Accounts.User do
+  @moduledoc """
+    Users of flicks
+  """
   use Ecto.Schema
   import Ecto.Changeset
 
