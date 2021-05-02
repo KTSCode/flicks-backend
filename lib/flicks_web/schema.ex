@@ -12,4 +12,9 @@ defmodule FlicksWeb.Schema do
       resolve(&FlicksWeb.Resolvers.Test.test/3)
     end
   end
+
+  # mutation do
+  #  @desc "Sign up for Flicks and create a user account"
+  #  field :
+  # end
 end

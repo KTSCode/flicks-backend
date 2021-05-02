@@ -12,7 +12,7 @@ defmodule Flicks.MixProject do
       ],
       app: :flicks,
       version: "0.1.0",
-      elixir: "~> 1.11.2",
+      elixir: "~> 1.11.3",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -40,11 +40,11 @@ defmodule Flicks.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:absinthe, "~> 1.5.2"},
-      {:absinthe_phoenix, "~> 2.0.0"},
-      {:absinthe_plug, "~> 1.5.0"},
-      {:cors_plug, "~> 2.0.2"},
-      {:credo, "~> 1.4.0", only: :dev, runtime: false},
+      {:absinthe, "~> 1.5.5"},
+      {:absinthe_phoenix, "~> 2.0.1"},
+      {:absinthe_plug, "~> 1.5.5"},
+      {:cors_plug, "~> 2.0.3"},
+      {:credo, "~> 1.4.1", only: :dev, runtime: false},
       {:ecto_sql, "~> 3.4.5"},
       {:ex_doc, "~> 0.22.2", only: :dev, runtime: false},
       {:ex_machina, "~> 2.4.0"},
